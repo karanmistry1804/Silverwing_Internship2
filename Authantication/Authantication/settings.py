@@ -145,11 +145,11 @@ if DEBUG:
     STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), "Authantication", "static", "static"),)
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #allauth configurations
 
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/home/'
+LOGIN_REDIRECT_URL = ''
 
 ACCOUNT_AUTHENTICATION_METHOD = "username"
 ACCOUNT_EMAIL_REQUIRED = True
@@ -160,7 +160,7 @@ ACCOUNT_CONFIRM_EMAIL_ON_GET = False
 
 ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 3
 ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 3600
-ACCOUNT_LOGOUT_REDIRECT_URL = '/home/'
+ACCOUNT_LOGOUT_REDIRECT_URL = ''
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = True
 
 ACCOUNT_SIGNUP_PASSWORD_VERIFICATION = True
@@ -184,8 +184,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = '**** your Email ****'
-EMAIL_HOST_PASSWORD = '**** Your Password ****'
-
+EMAIL_HOST_USER = 'captanjacksparrow0@gmail.com'
+EMAIL_HOST_PASSWORD = 'Karanmistry@1804'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
